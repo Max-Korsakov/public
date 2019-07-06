@@ -1,0 +1,16 @@
+/*Общий файл для объединения стилей*/
+@import url('reset.css');
+@import url('header.css');
+@import url('photo.css');
+@import url('text.css');
+@import url('blocks.css');
+@import url('main.css');
+@import url('media.css');
+/*@font-face{
+    font-family: 'Font awesome';
+    src: url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg') format('svg'),
+    url('../fonts/fontawesome-webfont.eot') format('eot');
+    }*/

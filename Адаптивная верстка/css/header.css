@@ -1,0 +1,106 @@
+
+/*Плавный скролл*/
+.html {
+    scroll-behavior: smooth;
+}
+/*общий контейнер-блок для хереда*/
+.mk-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+/*общий контейнер-блок для хереда*/
+.mk-header__item {
+    position: relative;
+    height: 820px;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(240, 226, 215);
+    overflow: hidden;
+}
+/*элемент хедера, содержит фото и логотип*/
+.mk-header_photo  {
+    background-image: url("../images/home-img.jpg");
+}
+.mk-header_photo:hover  {
+    transform: scale(1.03);
+}
+.mk-header_photo:hover .mk-header__logo {
+    transform: scale(1.5);
+    top:8%;
+}
+.mk-header__logo {
+    position: absolute;
+    top:4%;
+    left:24%;
+}
+/*контейнер для логотипа*/
+.mk-header__logo {
+    text-shadow: 0.5px 0.5px 0 #ffffff;
+    font-size: 25px;
+}
+/*список элементов меню при ширине экрана более 768px*/
+.mk-menu__desctop_items {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*список элементов меню при ширине экрана более 768px*/
+.mk-menu_link {
+    text-decoration: none;
+}
+/*контейнер для меню при ширине экрана менее 768px и кнопки его вызова (скрыта при большей ширине экрана*/
+.mk-menu__mobile__button {
+    display: none;
+}
+/*контейнер для меню при ширине экрана менее 768px (скрыт до нажатия на кнопку вызова меню*/
+.mk-menu__mobile {
+    display: none;
+}
+.mk-menu__mobile__button:hover .mk-menu__mobile{
+    display: block;
+}
+.mk-mobile__menu_open {
+    appearance: none;
+    width: 100%;
+    background-color: rgb(240, 226, 215);
+}
+/*прозрачная кнопка*/
+.mk_light_button {
+    border: 3px solid black;
+    border-radius: 30px;
+    background: transparent;
+    width: 30%;
+    height: 45px;
+    margin-top: 10%
+}
+.mk_light_button:hover {
+    border-color:  rgb(228, 174, 88);
+    color: rgb(228, 174, 88);
+}
+.mk_full_button:hover {
+    background-color: rgb(160, 159, 157);
+}
+
+/*Модификаторы*/
+.right_25 {
+    margin-left: 25px;
+}
+.mk-gold_decoration:hover {
+    color: rgb(224, 178, 126);
+}
+.mk-gold_decoration:active {
+    color: rgb(224, 178, 126);
+}
+.mk-effect_timer {
+    transition: 0.2s ease-in-out;
+}
+.mk-margin_top_30 {
+    margin-top: 30%;
+}
+.mk-block_margin_5 {
+    display: block;
+    margin:5% 0; 
+}

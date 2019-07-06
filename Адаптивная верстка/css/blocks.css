@@ -1,0 +1,54 @@
+/*Содержит простый модификаторы блоков*/
+.mk-small_block {
+    width: 25%;
+    height: 370px;
+}
+.mk-big_block {
+    width: 50%;
+    height: 620px;
+}
+.mk-about_block {
+    width: 50%;
+    height: 370px;
+}
+.mk-main__experience_block {
+    height: 380px;
+    width: 50%;
+}
+.mk-education_block {
+    height: 450px;
+    width: 50%;
+}
+.mk-inline_block {
+    display: inline-block;
+    float: left;
+}
+.mk-footer__ikons_block {
+    margin-top:5%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.mk-padding_3 {
+    box-sizing: border-box;
+    padding: 3%;
+}
+.mk-margin_3 {
+    margin: 3%;
+}
+.margin_top_3 {
+    margin-top: 3%;
+}
+.mk-margin_right_3 {
+    margin-right: 3%;
+}
+.mk-margin_left_10 {
+    margin-left: 10%;
+}
+.mk-margin_bott_righ {
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+.mk-margin_input {
+    margin-top: 30px;
+}

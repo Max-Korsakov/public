@@ -1,0 +1,49 @@
+/*Содержит простый модификаторы текста*/
+.mk-text_big {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+} 
+.mk-text_small {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+} 
+.mk-text_medium {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+} 
+.mk-text_tiny {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+.mk-text_bold {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+} 
+.text_semibold {
+    font-weight: 600;
+}
+.mk-text_white {
+    color: white;
+}
+.mk-text_grey {
+    color: rgb(160, 159, 157);
+    
+}
+.mk-text_dark_grey {
+    color: rgb(135, 135, 136);
+}
+.mk-text_semibold {
+    font-weight: 600;
+}
+.mk-text_space {
+    letter-spacing: 0.1em;
+}
+.mk-line_height {
+    line-height: 1.5em;
+}
+.mk-text_gold {
+    color: rgb(228, 174, 88);
+}
+.mk-text_center {
+    text-align: center;
+}

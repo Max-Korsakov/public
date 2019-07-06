@@ -1,0 +1,159 @@
+
+/*общий контейнер-блок для основной части сайта*/
+.mk-main {
+    width: 100%;
+}
+/*контейнер, задающий размеры блоку "Обо мне"*/
+.mk-main__about_me {
+    width: 50%;
+    height: 370px;
+}
+/*контейнеры для фото*/
+.mk-main__photo_me {
+    background-image: url(../images/about-img.jpg);
+}
+.mk-main__photo__experience {
+    background-image: url(../images/experience-img.jpg);
+}
+.mk-main__education_photo {
+    background-image: url(../images/education-img.jpg);
+}
+/*прогрессбар*/
+.mk-main__progressbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3px;
+}
+.mk-main__progressbar::-webkit-progress-bar {
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+.mk-main__progressbar::-webkit-progress-value {
+    background: black;
+}
+/*контейнер для раздела маленького блока (раздел My skills)*/
+.mk-small_block_wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-left:10%;
+    margin-right: 10%;
+    height: 80%;
+    width: 80%;
+}
+/*цифра-значение прогрессбара*/
+.mk-main_progress_value {
+    float: right;
+}
+/*общий контейнер для блока информации*/
+.mk-medium_block_wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+/*раздел testimonial*/
+.mk-testimonial__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/quotes-bg.jpg);
+}
+.ms-testimonial_text {
+    text-align: center;
+    padding: 0 10%;
+}
+/*раздел contacts, форма*/
+.mk-contacts__form{
+    box-sizing: border-box;
+}
+.mk-contacts__fieldset {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mk-contacts__form_input {
+    padding: 10px;
+    width: 90%;
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid rgb(228, 174, 88);;
+    color: white;
+}
+.mk-contacts__form_input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+  }
+  
+.mk-contacts__form_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+.mk-contacts__form_input:focus {
+    border-bottom: 2px solid gold
+}
+
+.mk-contacts_textarea { 
+    height: 100px;
+}
+/*Кнопка*/
+.mk-full__button {
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    width: 50%;
+    height: 45px;
+    margin-top: 5%
+}
+.mk-full__button:hover {
+    background-color: rgb(160, 159, 157);
+}
+/*раздел contacts, фото*/
+.mk-contacts__photo {
+    background-image: url(../images/contact-img.jpg);
+}
+/*раздел contacts, информация*/
+.mk-contacts_block_wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-top: 15%;
+    margin-left:5%;
+    margin-right: 5%;
+    height: 80%;
+    width: 90%;
+}
+.mk-contacts_item_wrapper {
+    margin: 10% 0;
+}
+/*Футер*/
+.mk-footer {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mk-footer_link {
+    text-decoration: none;
+}
+/*Модификаторы цвета бэкграунда*/
+.mk-orange_back {
+    background-color: rgb(228, 174, 88);
+    }
+.mk-red_back {
+    background-color: rgb(233, 113, 76);
+    }
+.mk-black_back {
+    background-color: black;
+}

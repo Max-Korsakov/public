@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+        <meta charset="utf-8">
+        <title>Stimulus</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body class="body">
+    <!--Верстка имеет две переломные точки 768px и 414px
+    При ширине менее 768px верхнее меню меняется на гамбургер, часть блоков занимают 100% ширины экрана
+    При ширине менее 414px все блоки занимают 100% ширины экрана, расположены в одну колонку, верхнее фото
+    переежает под блок с меню, чтобы не мешать доступу к всплывающему меню-->
+    <header class="mk-header">
+    <!--
+        В блоке исользованы следующие классы
+        mk-header >>> общий контейнер-блок для хереда
+        mk-header__item >>> контейнер для элементов хедера
+        mk-header_photo >>> элемент хедера, содержит фото и логотип
+        mk-header__logo >>> контейнер для логотипа
+        mk-menu__desctop >>> элемент, контейнер для меню при ширине экрана более 768px
+        mk-menu__desctop_items >>> список элементов меню при ширине экрана более 768px
+        mk-menu__mobile__button >>> контейнер для меню при ширине экрана менее 768px и кнопки его вызова
+        mk-menu__mobile >>> контейнер для меню при ширине экрана менее 768px
+        mk-mobile__menu_open >>> список элементов меню при ширине экрана менее 768px
+        mk-menu_link >>> элемент меню
+        mk_light_button >>> прозрачная кнопка
+
+        Модификаторы, файл header:
+        mk-gold_decoration >>> добавляет золотой цвет при нажатии или наведении
+        mk-effect_timer >>> задержка эффекта на 0.2 секунды
+        mk-margin_top_30 >>> задает марджин топ 30%
+        mk-block_margin_5 >>> элемент-блок, марждин сверху и снизу по 5%
+
+        Модификаторы, файл text:
+        mk-text_small >>> размер текста 20px
+        mk-text_big >>> размер текста 40px
+        mk-text_space >>> межбуквенное расстояние 0.1em
+        mk-line_height >>> высота линии 1.5em
+        mk-text_grey >>> цвет текста серый
+        mk-text_dark_grey >>> цвет текста темно серый
+        mk-text_semibold >>> толщина шрифта 600
+        mk-text_bold >>> толщина шрифта 700
+
+        Модификаторы, файл photo:
+        mk-photo_background_820 >>> задает изначальное положение фото на бэкграунде блока
+    -->
+        <div class="mk-header_photo mk-effect_timer mk-header__item mk-photo_background_820">
+            <div class="mk-header__logo mk-effect_timer mk-text_bold">Stimulus</div>
+        </div>
+        <div class="mk-header__item mk-padding_3">
+            <nav class="mk-menu__desctop">
+                <ul class="mk-menu__desctop_items">
+                    <li class="right_25"><a class="mk-menu_link mk-text_space  mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#">HOME</a></li>
+                    <li class="right_25"><a class="mk-menu_link mk-text_space  mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-main__about_me">ABOUT ME</a></li>
+                    <li class="right_25"><a class="mk-menu_link mk-text_space  mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-main__experience">EXPERIENCES</a></li>
+                    <li class="right_25"><a class="mk-menu_link mk-text_space  mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-testimonial">TESTIMONIAL</a></li>
+                    <li class="right_25"><a class="mk-menu_link mk-text_space  mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-contacts">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="mk-menu__mobile__button mk-text_small  mk-text_dark_grey">
+                <i class="fas fa-bars"></i>
+                <nav class="mk-menu__mobile">
+                    <ul class="mk-mobile__menu_open">
+                        <li><a class="mk-menu_link mk-text_space mk-text_small mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#">HOME</a></li>
+                        <li><a class="mk-menu_link mk-text_space mk-text_small mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-main__about_me">ABOUT ME</li>
+                        <li><a class="mk-menu_link mk-text_space mk-text_small mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-main__experience">EXPERIENCES</a></li>
+                        <li><a class="mk-menu_link mk-text_space mk-text_small mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-testimonial">TESTIMONIAL</a></li>
+                        <li><a class="mk-menu_link mk-text_space mk-text_small mk-gold_decoration mk-text_dark_grey mk-effect_timer" href="#mk-contacts">CONTACT</a></li>
+                        </ul>
+                </nav>
+            </div>
+            <div class="mk-margin_top_30">
+                <span class="mk-block_margin_5 mk-text_space mk-text_small mk-text_semibold mk-text_dark_grey">WELCOME TO MY SITE</span>
+                <span class="mk-block_margin_5 mk-text_big mk-line_height">Hello, I am <span class="text_semibold">Stimilus</span> currently based in New York city</span>
+                <p class="mk-text_small mk-text_grey mk-line_height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                <button class="mk_light_button mk-text_bold mk-effect_timer">GET STARTED</button>
+            </div>
+        </div>
+    </header>
+    <!--Основная часть сайта, содержащая информацию-->
+    <main clacc="mk-main" >
+        <!--В блоке использованы следующие классы
+        mk-main >>> общий контейнер-блок для основной части сайта
+
+        mk-main__about_me >>> контейнер, задающий размеры блоку "Обо мне"
+        mk-main__photo_me >>> контейнер для фото
+
+        mk-small_block_wrapper >>> контейнер для раздела My skills
+        mk-main_item_wrapper >>> контейнер для прогрессбара
+        mk-main__progressbar >>> прогрессбар
+        mk-main_progress_value >>> цифра-значение прогрессбара
+
+        mk-main__photo__experience >>> контейнер для фото
+        mk-main__experience_block >>> контейнер блока My experience
+        mk-main__education_block  >>> контейнер блока My education
+        mk-main_item_wrapper >>> обертка блока, без свойств
+        
+        Модификаторы, файл main:
+        mk-medium_block_wrapper >>> общий контейнер для блока информации
+        mk-orange_back >>> ораньжевый цвет бэкграунда
+
+        Модификаторы, файл blocks:
+        mk-inline_block >>> задает свойство инлайн-блок, флот лефт
+        mk-small_block  >>> задает размеры блока
+        mk-margin_left_10 >>> задает марджин лефт 10%
+        
+        Модификаторы, файл photo:
+        mk-photo_background_square >>> задает изначальное положение фото на бэкграунде блока
+        mk-photo_background_380 >>> задает изначальное положение фото на бэкграунде блока
+        mk-photo_background_440 >>> задает изначальное положение фото на бэкграунде блока
+
+        Модификаторы, файл text:
+        mk-text_center >>> задает положение текста по центру блока
+        mk-text_medium >>> задает размер шрифта 25px
+        mk-text_tiny задает размер шрифта 15px
+        -->
+        <!--Обо мне-->
+        <div class="mk-main__about_me mk-inline_block mk-padding_3" id="mk-main__about_me">
+            <span class="mk-text_big mk-line_height">Donec actor</span>
+            <span class="mk-block_margin_5 mk-text_small mk-text_gold mk-line_height">Donec actor actor actor</span>
+            <p class="mk-text_small mk-text_grey mk-line_height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+        </div>
+        <!--Фото раздела Обо мне-->
+        <div class="mk-main__photo_me mk-photo_background_square mk-small_block mk-inline_block"></div>
+        <!--My skills-->
+        <div class="mk-main__skills mk-small_block mk-orange_back mk-inline_block">
+            <div class="mk-small_block_wrapper">
+                <span class="mk-text_big mk-text_white">My skills</span>
+                <p class="mk-text_tiny mk-text_white ">Photoshop. HTML CSS JS.Web Design. </p>
+                <div class="mk-main_item_wrapper">
+                    <span class=" mk-text_bold">Frontend design</span><span class="mk-main_progress_value mk-text_white mk-text_bold">90%</span>
+                    <progress class="mk-main__progressbar" max="100" value="90"></progress>
+                </div>
+                <div class="mk-main_item_wrapper">
+                    <span class="mk-text_bold">Backend processing</span><span class="mk-main_progress_value mk-text_white mk-text_bold">70%</span>
+                    <progress class="mk-main__progressbar" max="100" value="70"></progress>
+                </div>
+                <div class="mk-main_item_wrapper">
+                    <span class="mk-text_bold">HTML&CSS3</span><span class="mk-main_progress_value mk-text_white mk-text_bold">80%</span>
+                    <progress class="mk-main__progressbar" max="100" value="80"></progress>
+                </div>
+            </div>
+        </div>
+        <!--Interface Design-->
+        <div class="mk-small_block mk-orange_back mk-inline_block">
+            <div class="mk-small_block_wrapper">
+                <span class="mk-text_big mk-text_white mk-text_center"><i class="fas fa-desktop"></i></span>
+                <p class=" mk-text_white mk-text_center mk-text_medium">Interface Design </p>
+                <div class="mk-main_item_wrapper">
+                    <p class="mk-text_small mk-text_white mk-line_height mk-text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+            </div>
+        </div>
+        <!--Media Strategy-->
+        <div class="mk-small_block mk-inline_block mk-red_back ">
+            <div class="mk-small_block_wrapper">
+                <span class="mk-text_big mk-text_white mk-text_center"><i class="fas fa-paper-plane"></i></span>
+                <p class="mk-text_white mk-text_center mk-text_medium">Media Strategy </p>
+                <div class="mk-main_item_wrapper">
+                    <p class="mk-text_small mk-text_white mk-line_height mk-text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod   </p>
+                </div>
+            </div>
+        </div>
+        <!--Mobile App-->
+        <div class="mk-small_block mk-inline_block mk-black_back">
+            <div class="mk-small_block_wrapper">
+                <span class="mk-text_big mk-text_white mk-text_center"><i class="fas fa-table"></i></span>
+                <p class="mk-text_white mk-text_center mk-text_medium">Mobile App </p>
+                <div class="mk-main_item_wrapper">
+                    <p class="mk-text_small mk-text_white mk-line_height mk-text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod   </p>
+                </div>
+            </div>
+        </div>
+         <!--Coding-->
+        <div class="mk-small_block mk-inline_block">
+            <div class="mk-small_block_wrapper">
+                <span class="mk-text_big text_black mk-text_center"><i class="fab fa-html5"></i></span>
+                <p class="text_black mk-text_center mk-text_medium">Coding </p>
+                <div class="mk-main_item_wrapper">
+                    <p class="mk-text_small text_black mk-line_height mk-text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod   </p>
+                </div>
+            </div>
+        </div>
+        <!--Фото раздела Experience-->
+        <div class="mk-main__photo__experience mk-photo_background_380 mk-main__experience_block mk-inline_block "></div>
+        <!--Раздела Experience-->
+        <div class="mk-main__experience_block mk-red_back mk-inline_block middle_block mk-padding_3" id="mk-main__experience">
+            <div class="mk-medium_block_wrapper">
+                <span class="mk-text_big mk-line_height mk-text_white">My experiences</span>
+                <span class=" mk-text_small mk-text_white mk-line_height">Donec actor actor actor</span>
+                <div class="mk-main_item_wrapper mk-block_margin_5">
+                    <div class="mk-text_white mk-text_medium mk-inline_block"><i class="fas fa-laptop "></i></div>
+                    <div class="mk-margin_left_10">
+                        <span class="mk-text_white mk-text_medium mk-margin_bott_righ">Graphic Designer</span>
+                        <span class="mk-text_small">2014 Jul-2015 Sep</span>
+                        <div class="mk-text_white mk-text_tiny margin_top_3 ">Lorem ipsum dolor sit amet, consectetur</div>  
+                    </div>
+                </div>
+                <div class="mk-main_item_wrapper">
+                    <div class="mk-text_white mk-text_medium mk-inline_block"><i class="fas fa-laptop "></i></div>
+                    <div class="mk-margin_left_10">
+                        <span class="mk-text_white mk-text_medium mk-margin_bott_righ">Web Designer</span>
+                        <span class="mk-text_small">2015 Oct-2017 Jan</span>
+                        <div class="mk-text_white mk-text_tiny margin_top_3">Lorem ipsum dolor sit amet, consectetur</div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--Раздел Education--> 
+        <div class="mk-main__education_block mk-education_block mk-orange_back mk-inline_block middle_block mk-padding_3">     
+            <div class="mk-medium_block_wrapper">
+                <span class="mk-text_big mk-line_height mk-text_white">My education</span>
+                <span class=" mk-text_small mk-text_white mk-line_height">Donec actor actor actor</span>
+                <div class="mk-main_item_wrapper mk-block_margin_5">
+                    <div class="mk-text_white mk-text_medium mk-inline_block"><i class="fas fa-laptop "></i></div>
+                    <div class="mk-margin_left_10">
+                        <span class="mk-text_white mk-text_medium mk-margin_bott_righ">Master in Design</span>
+                        <span class="mk-text_small">2012 Jan-2014 May</span>
+                        <div class="mk-text_white mk-text_tiny margin_top_3 ">Lorem ipsum dolor sit amet, consectetur</div>  
+                    </div>
+                </div>
+                <div class="mk-main_item_wrapper">
+                    <div class="mk-text_white mk-text_medium mk-inline_block"><i class="fas fa-laptop "></i></div>
+                    <div class="mk-margin_left_10">
+                        <span class="mk-text_white mk-text_medium mk-margin_bott_righ">Bachlor of Arts</span>
+                        <span class="mk-text_small">2008 May-2011 Dec</span>
+                        <div class="mk-text_white mk-text_tiny margin_top_3">Lorem ipsum dolor sit amet, consectetur</div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Фото раздела Education--> 
+        <div class="mk-main__education_photo mk-photo_background_440 mk-education_block mk-inline_block middle_block"></div>
+    </main>
+    <!--В блоке использованы следующие классы (классы хранятся в файле main)
+    mk-testimonial >>> общий контейнер-блок для основной части сайта
+    mk-testimonial__photo >>> контейнер для фото
+    ms-testimonial_text >>> задает свойства текста раздела
+
+    Модификаторы, файл photo:   
+    mk-photo_background_480 >>> задает изначальное положение фото на бэкграунде блока
+    --> 
+    <div class="mk-testimonial">
+        <div class="mk-testimonial__photo mk-photo_background_480 mk-inline_block " id="mk-testimonial">
+            <div class="mk-gold_decoration  mk-text_white mk-text_big mk-effect_timer mk-margin_3" ><i class="fas fa-star"></i></div>
+            <div class="ms-testimonial_text mk-text_white mk-text_big mk-margin_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+            <p class="ms-testimonial_text mk-text_small mk-text_grey mk-line_height">Lorem ipsum dolor sit amet, consectetur adipibore et dolore  </p>
+        </div>
+    </div>
+    <!--В блоке использованы следующие классы (классы хранятся в файле main)
+    mk-contacts >>> общий контейнер-блок для основной части сайта
+    mk-contacts__fieldset >>> контейнер для форм
+    mk-contacts__form_input >>> форма ввода данных
+    mk-contacts_textarea >>> модификатор, задает свойства текстового поля
+    mk-full__button >>> кнопка
+    mk-contacts__photo >>> блок для помещения фото
+    mk-contacts_block_wrapper >>> общий контейнер блока контактов
+    mk-contacts_item_wrapper >>> контейнер контактов
+    mk-margin_input >>> модификатор, задает отступ формы
+
+    Модификаторы, файл photo:   
+    mk-photo_background_620 >>> задает изначальное положение фото на бэкграунде блока
+    
+    Модификаторы, файл blocks: 
+    mk-big_block >>> задает размер блока
+
+    Модификаторы, файл media: 
+    mk-contacts_mobile >>> увеличивает ширину блока до 100% при ширине экрана 414px
+    --> 
+    <div class="mk-contacts" >
+        <div class="mk-contacts_mobile  mk-big_block mk-inline_block mk-red_back mk-padding_3" id="mk-contacts">
+            <!--Форма обратной связи-->    
+            <fieldset class="mk-contacts__fieldset">
+                <p class=" mk-margin_input mk-text_big mk-text_white">Say hello...</p>
+                <p class="mk-margin_input mk-text_small mk-text_white">Lorem ipsum dolor sit amett</p>
+                <form class="mk-margin_input">
+                    <input class="mk-contacts__form_input mk-text_white mk-red_back" type="text" placeholder="Your name">
+                </form>
+                <form class="mk-margin_input" >
+                    <input class="mk-contacts__form_input mk-text_white mk-red_back" type="email" placeholder="Your e-mail">
+                </form>
+                <form  class="mk-margin_input">
+                    <textarea class="mk-contacts_textarea mk-contacts__form_input mk-text_white mk-red_back" type="text" placeholder="Write your message.."></textarea>
+                </form>
+                <button class="mk-full__button mk-margin_input mk-effect_timer" type="submit" class="mk-red_back">Send</button>
+            </fieldset>
+        </div>
+        <!--Блок с фото и контактными данными--> 
+        <div class="mk-contacts_mobile  mk-big_block mk-inline_block ">
+         <!--Блок фото --> 
+            <div class="mk-contacts__photo mk-photo_background_620 mk-big_block mk-inline_block"></div>
+         <!--Блок контактных данных -->  
+            <div class="mk-big_block mk-inline_block mk-padding_3 mk-black_back"> 
+                <div class="mk-contacts_block_wrapper">
+                    <p class="mk-text_white mk-text_medium">Visit my office </p>
+                    <div class="mk-contacts_item_wrapper">
+                        <p class="mk-text_tiny mk-text_grey mk-line_height">456 New street 220000, New York City, USA</p>
+                    </div>
+                    <p class=" mk-text_white mk-text_medium">Contact</p>
+                    <div class="mk-contacts_item_wrapper">
+                        <p class="mk-text_small mk-text_grey"><i class="fas fa-phone mk-margin_3"></i><a class="mk-footer_link mk-text_small mk-text_grey" href="tel:+01-0110-0220">01-0110-0220</a></p>
+                        <p class="mk-text_small mk-text_grey"><i class="far fa-envelope mk-margin_3"></i><a class="mk-footer_link mk-text_small mk-text_grey" href="mailto:adwuno@gmail.com">hello@company.co</a></p>
+                        <p class="mk-text_small mk-text_grey"><i class="fas fa-globe-americas mk-margin_3"></i><a class="mk-footer_link mk-text_small mk-text_grey" href="skype:Max">company.co</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--В блоке использованы следующие классы (классы хранятся в файле main)
+    mk-footer >>> общий контейнер-блок для основной части сайта
+    mk-footer__ikons_block >>> контейнер для иконок
+    mk-contacts__form_input >>> форма ввода данных
+    --> 
+    <footer class="mk-footer mk-inline_block">
+            <div class="ms-testimonial_text mk-text_dark_grey">
+            <span>Copyright </span><i class="far fa-copyright"></i><span></span> 2016 Your Company | Design:<a class="mk-footer_link mk-text_gold" href="https://www.facebook.com/max.korsakov">Karsakou </a></span>
+            </div>
+            <div class="mk-footer__ikons_block">
+                <span><a class="mk-footer_link mk-gold_decoration mk-text_grey" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a class="mk-footer_link mk-gold_decoration mk-text_grey" href="https://twitter.com"><i class="fab fa-twitter"></i></a></span>
+                <span><a class="mk-footer_link mk-gold_decoration mk-text_grey" href="https://aboutme.google.com"><i class="fab fa-google-plus-g"></i></a></span>
+                <span><a class="mk-footer_link mk-gold_decoration mk-text_grey" href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a></span>
+                <span><a class="mk-footer_link mk-gold_decoration mk-text_grey" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></span>
+            </div>
+    </footer>
+</body>
+</html>

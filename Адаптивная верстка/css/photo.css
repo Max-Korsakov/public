@@ -1,0 +1,43 @@
+/*Содержит модификаторы блоков с фотографиями*/
+.mk-photo_background_820  {
+    height: 820px;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.mk-photo_background_square  {
+    height: 340px;
+    width: 100%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+.mk-photo_background_380  {
+    height: 380px;
+    width: 50%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.mk-photo_background_440  {
+    height: 440px;
+    width: 50%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.mk-photo_background_480  {
+    height: 480px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.mk-photo_background_620  {
+    height: 620px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
